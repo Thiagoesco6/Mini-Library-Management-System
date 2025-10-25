@@ -1,18 +1,24 @@
 # Mini-Library-Management-System
 
-## Project Overview
-This is a Python-based Library Management System developed for PROG211 - Object-Oriented Programming 1. The system manages books, members, and borrowing operations using fundamental Python data structures.
+# Mini Library Management System
 
-## Features
-- **Book Management**: Add, search, update, and delete books
-- **Member Management**: Add, update, and delete members  
-- **Borrowing System**: Borrow and return books with validation
-- **Search Functionality**: Search books by title or author
-- **Data Validation**: Comprehensive error checking and validation
+## Files
+- operations.py       : Core library functions
+- demo.py             : Demonstration script
+- tests.py            : Assert-based tests
+- UML.png             : UML diagram (hand-drawn style)
+- DesignRationale.pdf : Short design rationale (1 page)
+- README.md           : This file
 
-## Data Structures Used
-- **Dictionary**: For books (ISBN as key for O(1) lookup)
-- **List**: For members (simple sequential access)
-- **Tuple**: For genres (immutable, fixed categories)
+## How to run
+1. Run demo:
+   python demo.py
 
-## Files Structure
+2. Run tests:
+   python tests.py
+
+## Notes
+- Data is kept in-memory (no persistent database); restarting the script clears data.
+- Genres are validated against a fixed tuple: ("Fiction", "Non-Fiction", "Sci-Fi", "Biography", "Education")
+- Borrow limit per member: 3 books.
+- Deletion rules: cannot delete a book if copies are currently borrowed; cannot delete a member with borrowed books.
