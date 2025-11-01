@@ -1,5 +1,10 @@
 # Mini Library Management System (Python)
 
+# Author
+- Name: Osman Adu Daramy
+- Progarm: BSEM 1103 SEMESTER 3
+- ID: 905005136
+
 # Overview
 This Mini Library Management System was developed as *Assignment 1* for the module *Object-Oriented Programming 1 (PROG211)* at *Limkokwing University, Sierra Leone*.  
 It demonstrates CRUD operations using dictionaries, lists, and tuples in Python.
